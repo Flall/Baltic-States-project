@@ -34,6 +34,27 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-4-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.photo-gallery {
+  margin: 30px 0;
+}
+
+.gallery-img {
+  width: 100%;
+  display: block;
+  border: 2px solid black;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
 .embed {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -255,5 +276,10 @@ footer a {
 
   .embed {
     aspect-ratio: 16 / 9;
+  }
+
+  .gallery-img {
+    width: 60%;
+    display: block;
   }
 }
